@@ -19,6 +19,14 @@
 		FE1371AA15E9114F00855C81 /* TPSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1371A815E9114F00855C81 /* TPSettingsViewController.xib */; };
 		FE1371AF15E9138800855C81 /* TPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1371AD15E9138800855C81 /* TPMainViewController.m */; };
 		FE1371B015E9138800855C81 /* TPMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1371AE15E9138800855C81 /* TPMainViewController.xib */; };
+		FEBBB8EB15E91DC2005F1155 /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8E915E91DC2005F1155 /* 06-magnify.png */; };
+		FEBBB8EC15E91DC2005F1155 /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8EA15E91DC2005F1155 /* 06-magnify@2x.png */; };
+		FEBBB8EF15E91E24005F1155 /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8ED15E91E24005F1155 /* 28-star.png */; };
+		FEBBB8F015E91E24005F1155 /* 28-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8EE15E91E24005F1155 /* 28-star@2x.png */; };
+		FEBBB8F315E91E96005F1155 /* 74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8F115E91E96005F1155 /* 74-location.png */; };
+		FEBBB8F415E91E96005F1155 /* 74-location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8F215E91E96005F1155 /* 74-location@2x.png */; };
+		FEBBB8F715E91EB8005F1155 /* 20-gear-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8F515E91EB8005F1155 /* 20-gear-2.png */; };
+		FEBBB8F815E91EB8005F1155 /* 20-gear-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8F615E91EB8005F1155 /* 20-gear-2@2x.png */; };
 		FEF4E69115E5C64000FDFEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69015E5C64000FDFEB0 /* UIKit.framework */; };
 		FEF4E69315E5C64000FDFEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69215E5C64000FDFEB0 /* Foundation.framework */; };
 		FEF4E69515E5C64000FDFEB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69415E5C64000FDFEB0 /* CoreGraphics.framework */; };
@@ -46,6 +54,14 @@
 		FE1371AC15E9138800855C81 /* TPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPMainViewController.h; sourceTree = "<group>"; };
 		FE1371AD15E9138800855C81 /* TPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPMainViewController.m; sourceTree = "<group>"; };
 		FE1371AE15E9138800855C81 /* TPMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPMainViewController.xib; sourceTree = "<group>"; };
+		FEBBB8E915E91DC2005F1155 /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "06-magnify.png"; path = "../06-magnify.png"; sourceTree = "<group>"; };
+		FEBBB8EA15E91DC2005F1155 /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "06-magnify@2x.png"; path = "../06-magnify@2x.png"; sourceTree = "<group>"; };
+		FEBBB8ED15E91E24005F1155 /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "28-star.png"; path = "../28-star.png"; sourceTree = "<group>"; };
+		FEBBB8EE15E91E24005F1155 /* 28-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "28-star@2x.png"; path = "../28-star@2x.png"; sourceTree = "<group>"; };
+		FEBBB8F115E91E96005F1155 /* 74-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "74-location.png"; path = "../74-location.png"; sourceTree = "<group>"; };
+		FEBBB8F215E91E96005F1155 /* 74-location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "74-location@2x.png"; path = "../74-location@2x.png"; sourceTree = "<group>"; };
+		FEBBB8F515E91EB8005F1155 /* 20-gear-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "20-gear-2.png"; path = "../20-gear-2.png"; sourceTree = "<group>"; };
+		FEBBB8F615E91EB8005F1155 /* 20-gear-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "20-gear-2@2x.png"; path = "../20-gear-2@2x.png"; sourceTree = "<group>"; };
 		FEF4E68C15E5C64000FDFEB0 /* Taste of Peru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste of Peru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF4E69015E5C64000FDFEB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEF4E69215E5C64000FDFEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,6 +148,21 @@
 			path = TBMainViewController;
 			sourceTree = "<group>";
 		};
+		FEBBB8F915E91EBC005F1155 /* Tab Bar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FEBBB8F115E91E96005F1155 /* 74-location.png */,
+				FEBBB8F215E91E96005F1155 /* 74-location@2x.png */,
+				FEBBB8E915E91DC2005F1155 /* 06-magnify.png */,
+				FEBBB8EA15E91DC2005F1155 /* 06-magnify@2x.png */,
+				FEBBB8ED15E91E24005F1155 /* 28-star.png */,
+				FEBBB8EE15E91E24005F1155 /* 28-star@2x.png */,
+				FEBBB8F515E91EB8005F1155 /* 20-gear-2.png */,
+				FEBBB8F615E91EB8005F1155 /* 20-gear-2@2x.png */,
+			);
+			path = "Tab Bar Icons";
+			sourceTree = "<group>";
+		};
 		FEF4E68115E5C64000FDFEB0 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +224,7 @@
 		FEF4E6B315E5DFC100FDFEB0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FEBBB8F915E91EBC005F1155 /* Tab Bar Icons */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -269,6 +301,14 @@
 				FE1371A415E910B300855C81 /* TPFavoritesViewController.xib in Resources */,
 				FE1371AA15E9114F00855C81 /* TPSettingsViewController.xib in Resources */,
 				FE1371B015E9138800855C81 /* TPMainViewController.xib in Resources */,
+				FEBBB8EB15E91DC2005F1155 /* 06-magnify.png in Resources */,
+				FEBBB8EC15E91DC2005F1155 /* 06-magnify@2x.png in Resources */,
+				FEBBB8EF15E91E24005F1155 /* 28-star.png in Resources */,
+				FEBBB8F015E91E24005F1155 /* 28-star@2x.png in Resources */,
+				FEBBB8F315E91E96005F1155 /* 74-location.png in Resources */,
+				FEBBB8F415E91E96005F1155 /* 74-location@2x.png in Resources */,
+				FEBBB8F715E91EB8005F1155 /* 20-gear-2.png in Resources */,
+				FEBBB8F815E91EB8005F1155 /* 20-gear-2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
