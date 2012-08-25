@@ -9,6 +9,9 @@
 #import "TPNearbyViewController.h"
 #import <MapKit/MapKit.h>
 
+#define LIST_VIEW_INDEX 0
+#define MAP_VIEW_INDEX 1
+
 @interface TPNearbyViewController ()
 
 @property (strong, nonatomic) MKMapView* mapView;
@@ -18,12 +21,12 @@
 @property (strong, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
+- (IBAction)segmentedControlTapped:(id)sender;
+
+
 @end
 
 @implementation TPNearbyViewController
-@synthesize segmentedControl;
-@synthesize centerView = _centerView;
-@synthesize navigationBar = _navigationBar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,9 +42,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    //Load map as initial view
     self.mapView = [[MKMapView alloc] initWithFrame:self.centerView.frame];
-    [self.view addSubview:self.mapView];
+    self.tableView = [[UITableView alloc] initWithFrame:self.centerView.frame];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    [self presentMapView];
 }
 
 - (void)viewDidUnload
@@ -57,6 +63,57 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)segmentedControlTapped:(id)sender {
+    
+    if (self.segmentedControl.selectedSegmentIndex == LIST_VIEW_INDEX)
+        [self presentMapView];
+    else
+        [self presentTableView];
+}
+
+#pragma mark - UITableViewDataSource methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"TPSettingsCell"];
+    if (!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"TPSettingsCell"];
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate methods
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    
+}
+
+#pragma mark - Miscellaneous methods
+
+- (void)presentMapView {
+    
+    [self.tableView  removeFromSuperview];
+    [self.view addSubview:self.mapView];
+    
+}
+
+- (void)presentTableView {
+    
+    [self.mapView  removeFromSuperview];
+    [self.view addSubview:self.tableView];
+    
 }
 
 @end

@@ -8,6 +8,6 @@
 
 #import "TPBaseViewController.h"
 
-@interface TPNearbyViewController : TPBaseViewController
+@interface TPNearbyViewController : TPBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
