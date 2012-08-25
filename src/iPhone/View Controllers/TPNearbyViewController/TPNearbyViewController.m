@@ -12,9 +12,15 @@
 
 @interface TPNearbyViewController ()
 
+@property (strong, nonatomic) UITableView* tableView;
+//@property (strong, nonatomic)
+
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+
 @end
 
 @implementation TPNearbyViewController
+@synthesize segmentedControl;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +39,7 @@
 
 - (void)viewDidUnload
 {
+    [self setSegmentedControl:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
