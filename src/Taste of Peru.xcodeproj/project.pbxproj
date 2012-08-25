@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE13718D15E90F6300855C81 /* TPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13718B15E90F6300855C81 /* TPBaseViewController.m */; };
+		FE13718E15E90F6300855C81 /* TPBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE13718C15E90F6300855C81 /* TPBaseViewController.xib */; };
+		FE13719715E9101900855C81 /* TPNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13719515E9101900855C81 /* TPNearbyViewController.m */; };
+		FE13719815E9101900855C81 /* TPNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE13719615E9101900855C81 /* TPNearbyViewController.xib */; };
+		FE13719D15E9104F00855C81 /* TPSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13719B15E9104F00855C81 /* TPSearchViewController.m */; };
+		FE13719E15E9104F00855C81 /* TPSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE13719C15E9104F00855C81 /* TPSearchViewController.xib */; };
+		FE1371A315E910B300855C81 /* TPFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1371A115E910B300855C81 /* TPFavoritesViewController.m */; };
+		FE1371A415E910B300855C81 /* TPFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1371A215E910B300855C81 /* TPFavoritesViewController.xib */; };
+		FE1371A915E9114F00855C81 /* TPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1371A715E9114F00855C81 /* TPSettingsViewController.m */; };
+		FE1371AA15E9114F00855C81 /* TPSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1371A815E9114F00855C81 /* TPSettingsViewController.xib */; };
 		FEF4E69115E5C64000FDFEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69015E5C64000FDFEB0 /* UIKit.framework */; };
 		FEF4E69315E5C64000FDFEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69215E5C64000FDFEB0 /* Foundation.framework */; };
 		FEF4E69515E5C64000FDFEB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69415E5C64000FDFEB0 /* CoreGraphics.framework */; };
@@ -16,6 +26,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE13718A15E90F6300855C81 /* TPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBaseViewController.h; sourceTree = "<group>"; };
+		FE13718B15E90F6300855C81 /* TPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBaseViewController.m; sourceTree = "<group>"; };
+		FE13718C15E90F6300855C81 /* TPBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPBaseViewController.xib; sourceTree = "<group>"; };
+		FE13719415E9101900855C81 /* TPNearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNearbyViewController.h; sourceTree = "<group>"; };
+		FE13719515E9101900855C81 /* TPNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNearbyViewController.m; sourceTree = "<group>"; };
+		FE13719615E9101900855C81 /* TPNearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPNearbyViewController.xib; sourceTree = "<group>"; };
+		FE13719A15E9104F00855C81 /* TPSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSearchViewController.h; sourceTree = "<group>"; };
+		FE13719B15E9104F00855C81 /* TPSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSearchViewController.m; sourceTree = "<group>"; };
+		FE13719C15E9104F00855C81 /* TPSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPSearchViewController.xib; sourceTree = "<group>"; };
+		FE1371A015E910B300855C81 /* TPFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFavoritesViewController.h; sourceTree = "<group>"; };
+		FE1371A115E910B300855C81 /* TPFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFavoritesViewController.m; sourceTree = "<group>"; };
+		FE1371A215E910B300855C81 /* TPFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPFavoritesViewController.xib; sourceTree = "<group>"; };
+		FE1371A615E9114F00855C81 /* TPSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSettingsViewController.h; sourceTree = "<group>"; };
+		FE1371A715E9114F00855C81 /* TPSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSettingsViewController.m; sourceTree = "<group>"; };
+		FE1371A815E9114F00855C81 /* TPSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPSettingsViewController.xib; sourceTree = "<group>"; };
 		FEF4E68C15E5C64000FDFEB0 /* Taste of Peru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste of Peru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF4E69015E5C64000FDFEB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEF4E69215E5C64000FDFEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,6 +67,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE13718815E89DB900855C81 /* TPBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE13718A15E90F6300855C81 /* TPBaseViewController.h */,
+				FE13718B15E90F6300855C81 /* TPBaseViewController.m */,
+				FE13718C15E90F6300855C81 /* TPBaseViewController.xib */,
+			);
+			path = TPBaseViewController;
+			sourceTree = "<group>";
+		};
+		FE13719315E90FEC00855C81 /* TPNearbyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE13719415E9101900855C81 /* TPNearbyViewController.h */,
+				FE13719515E9101900855C81 /* TPNearbyViewController.m */,
+				FE13719615E9101900855C81 /* TPNearbyViewController.xib */,
+			);
+			path = TPNearbyViewController;
+			sourceTree = "<group>";
+		};
+		FE13719915E9102700855C81 /* TPSearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE13719A15E9104F00855C81 /* TPSearchViewController.h */,
+				FE13719B15E9104F00855C81 /* TPSearchViewController.m */,
+				FE13719C15E9104F00855C81 /* TPSearchViewController.xib */,
+			);
+			path = TPSearchViewController;
+			sourceTree = "<group>";
+		};
+		FE13719F15E9108A00855C81 /* TPFavoritesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE1371A015E910B300855C81 /* TPFavoritesViewController.h */,
+				FE1371A115E910B300855C81 /* TPFavoritesViewController.m */,
+				FE1371A215E910B300855C81 /* TPFavoritesViewController.xib */,
+			);
+			path = TPFavoritesViewController;
+			sourceTree = "<group>";
+		};
+		FE1371A515E910D500855C81 /* TPSettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE1371A615E9114F00855C81 /* TPSettingsViewController.h */,
+				FE1371A715E9114F00855C81 /* TPSettingsViewController.m */,
+				FE1371A815E9114F00855C81 /* TPSettingsViewController.xib */,
+			);
+			path = TPSettingsViewController;
+			sourceTree = "<group>";
+		};
 		FEF4E68115E5C64000FDFEB0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +158,11 @@
 		FEF4E6B115E5DF6400FDFEB0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FE13719315E90FEC00855C81 /* TPNearbyViewController */,
+				FE13719915E9102700855C81 /* TPSearchViewController */,
+				FE13719F15E9108A00855C81 /* TPFavoritesViewController */,
+				FE13718815E89DB900855C81 /* TPBaseViewController */,
+				FE1371A515E910D500855C81 /* TPSettingsViewController */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -167,6 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF4E69B15E5C64000FDFEB0 /* InfoPlist.strings in Resources */,
+				FE13718E15E90F6300855C81 /* TPBaseViewController.xib in Resources */,
+				FE13719815E9101900855C81 /* TPNearbyViewController.xib in Resources */,
+				FE13719E15E9104F00855C81 /* TPSearchViewController.xib in Resources */,
+				FE1371A415E910B300855C81 /* TPFavoritesViewController.xib in Resources */,
+				FE1371AA15E9114F00855C81 /* TPSettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +264,11 @@
 			files = (
 				FEF4E69D15E5C64000FDFEB0 /* main.m in Sources */,
 				FEF4E6A115E5C64000FDFEB0 /* TPAppDelegate.m in Sources */,
+				FE13718D15E90F6300855C81 /* TPBaseViewController.m in Sources */,
+				FE13719715E9101900855C81 /* TPNearbyViewController.m in Sources */,
+				FE13719D15E9104F00855C81 /* TPSearchViewController.m in Sources */,
+				FE1371A315E910B300855C81 /* TPFavoritesViewController.m in Sources */,
+				FE1371A915E9114F00855C81 /* TPSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
