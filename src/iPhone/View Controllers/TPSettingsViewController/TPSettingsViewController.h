@@ -8,6 +8,6 @@
 
 #import "TPBaseViewController.h"
 
-@interface TPSettingsViewController : TPBaseViewController
+@interface TPSettingsViewController : TPBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

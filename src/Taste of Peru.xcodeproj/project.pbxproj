@@ -207,9 +207,9 @@
 				FE13719315E90FEC00855C81 /* TPNearbyViewController */,
 				FE13719915E9102700855C81 /* TPSearchViewController */,
 				FE13719F15E9108A00855C81 /* TPFavoritesViewController */,
+				FE1371A515E910D500855C81 /* TPSettingsViewController */,
 				FE13718815E89DB900855C81 /* TPBaseViewController */,
 				FE1371AB15E911E700855C81 /* TBMainViewController */,
-				FE1371A515E910D500855C81 /* TPSettingsViewController */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
