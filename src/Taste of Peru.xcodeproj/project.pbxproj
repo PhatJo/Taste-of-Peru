@@ -17,6 +17,8 @@
 		FE1371A415E910B300855C81 /* TPFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1371A215E910B300855C81 /* TPFavoritesViewController.xib */; };
 		FE1371A915E9114F00855C81 /* TPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1371A715E9114F00855C81 /* TPSettingsViewController.m */; };
 		FE1371AA15E9114F00855C81 /* TPSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1371A815E9114F00855C81 /* TPSettingsViewController.xib */; };
+		FE1371AF15E9138800855C81 /* TPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1371AD15E9138800855C81 /* TPMainViewController.m */; };
+		FE1371B015E9138800855C81 /* TPMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1371AE15E9138800855C81 /* TPMainViewController.xib */; };
 		FEF4E69115E5C64000FDFEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69015E5C64000FDFEB0 /* UIKit.framework */; };
 		FEF4E69315E5C64000FDFEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69215E5C64000FDFEB0 /* Foundation.framework */; };
 		FEF4E69515E5C64000FDFEB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69415E5C64000FDFEB0 /* CoreGraphics.framework */; };
@@ -41,6 +43,9 @@
 		FE1371A615E9114F00855C81 /* TPSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSettingsViewController.h; sourceTree = "<group>"; };
 		FE1371A715E9114F00855C81 /* TPSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSettingsViewController.m; sourceTree = "<group>"; };
 		FE1371A815E9114F00855C81 /* TPSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPSettingsViewController.xib; sourceTree = "<group>"; };
+		FE1371AC15E9138800855C81 /* TPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPMainViewController.h; sourceTree = "<group>"; };
+		FE1371AD15E9138800855C81 /* TPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPMainViewController.m; sourceTree = "<group>"; };
+		FE1371AE15E9138800855C81 /* TPMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPMainViewController.xib; sourceTree = "<group>"; };
 		FEF4E68C15E5C64000FDFEB0 /* Taste of Peru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste of Peru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF4E69015E5C64000FDFEB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEF4E69215E5C64000FDFEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +122,16 @@
 			path = TPSettingsViewController;
 			sourceTree = "<group>";
 		};
+		FE1371AB15E911E700855C81 /* TBMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE1371AC15E9138800855C81 /* TPMainViewController.h */,
+				FE1371AD15E9138800855C81 /* TPMainViewController.m */,
+				FE1371AE15E9138800855C81 /* TPMainViewController.xib */,
+			);
+			path = TBMainViewController;
+			sourceTree = "<group>";
+		};
 		FEF4E68115E5C64000FDFEB0 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +177,7 @@
 				FE13719915E9102700855C81 /* TPSearchViewController */,
 				FE13719F15E9108A00855C81 /* TPFavoritesViewController */,
 				FE13718815E89DB900855C81 /* TPBaseViewController */,
+				FE1371AB15E911E700855C81 /* TBMainViewController */,
 				FE1371A515E910D500855C81 /* TPSettingsViewController */,
 			);
 			path = "View Controllers";
@@ -252,6 +268,7 @@
 				FE13719E15E9104F00855C81 /* TPSearchViewController.xib in Resources */,
 				FE1371A415E910B300855C81 /* TPFavoritesViewController.xib in Resources */,
 				FE1371AA15E9114F00855C81 /* TPSettingsViewController.xib in Resources */,
+				FE1371B015E9138800855C81 /* TPMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +286,7 @@
 				FE13719D15E9104F00855C81 /* TPSearchViewController.m in Sources */,
 				FE1371A315E910B300855C81 /* TPFavoritesViewController.m in Sources */,
 				FE1371A915E9114F00855C81 /* TPSettingsViewController.m in Sources */,
+				FE1371AF15E9138800855C81 /* TPMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +299,7 @@
 				FEF4E69A15E5C64000FDFEB0 /* en */,
 			);
 			name = InfoPlist.strings;
-			path = "/Users/pietrorea/Developer/Taste of Peru/src/iPhone/Supporting Files";
-			sourceTree = "<absolute>";
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
@@ -340,8 +357,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Taste of Peru/Taste of Peru-Prefix.pch";
-				INFOPLIST_FILE = "Taste of Peru/Taste of Peru-Info.plist";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iPhone/Supporting Files/Taste of Peru-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/iPhone/Supporting Files/Taste of Peru-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -351,8 +368,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Taste of Peru/Taste of Peru-Prefix.pch";
-				INFOPLIST_FILE = "Taste of Peru/Taste of Peru-Info.plist";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iPhone/Supporting Files/Taste of Peru-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/iPhone/Supporting Files/Taste of Peru-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

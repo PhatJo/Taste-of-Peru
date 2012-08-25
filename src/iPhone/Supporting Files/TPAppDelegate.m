@@ -7,9 +7,11 @@
 //
 
 #import "TPAppDelegate.h"
+#import "TPBaseViewController.h"
 
 @interface TPAppDelegate ()
 
+//@property (strong, nonatomic)
 
 
 @end
