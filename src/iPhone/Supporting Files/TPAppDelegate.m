@@ -7,12 +7,11 @@
 //
 
 #import "TPAppDelegate.h"
-#import "TPBaseViewController.h"
+#import "TPMainViewController.h"
 
 @interface TPAppDelegate ()
 
-//@property (strong, nonatomic)
-
+@property (strong, nonatomic) TPMainViewController* mainViewController;
 
 @end
 
@@ -24,6 +23,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    self.mainViewController = [[TPMainViewController alloc] init];
+    self.window.rootViewController = self.mainViewController;
+    
     return YES;
 }
 
