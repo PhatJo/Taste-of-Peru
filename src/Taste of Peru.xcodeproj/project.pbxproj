@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEF4E69115E5C64000FDFEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69015E5C64000FDFEB0 /* UIKit.framework */; };
+		FEF4E69315E5C64000FDFEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69215E5C64000FDFEB0 /* Foundation.framework */; };
+		FEF4E69515E5C64000FDFEB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69415E5C64000FDFEB0 /* CoreGraphics.framework */; };
+		FEF4E69B15E5C64000FDFEB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEF4E69915E5C64000FDFEB0 /* InfoPlist.strings */; };
+		FEF4E69D15E5C64000FDFEB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF4E69C15E5C64000FDFEB0 /* main.m */; };
+		FEF4E6A115E5C64000FDFEB0 /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF4E6A015E5C64000FDFEB0 /* TPAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FEF4E68C15E5C64000FDFEB0 /* Taste of Peru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste of Peru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF4E69015E5C64000FDFEB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEF4E69215E5C64000FDFEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEF4E69415E5C64000FDFEB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEF4E69815E5C64000FDFEB0 /* Taste of Peru-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Taste of Peru-Info.plist"; sourceTree = "<group>"; };
+		FEF4E69A15E5C64000FDFEB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEF4E69C15E5C64000FDFEB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEF4E69E15E5C64000FDFEB0 /* Taste of Peru-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taste of Peru-Prefix.pch"; sourceTree = "<group>"; };
+		FEF4E69F15E5C64000FDFEB0 /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
+		FEF4E6A015E5C64000FDFEB0 /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEF4E68915E5C64000FDFEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF4E69115E5C64000FDFEB0 /* UIKit.framework in Frameworks */,
+				FEF4E69315E5C64000FDFEB0 /* Foundation.framework in Frameworks */,
+				FEF4E69515E5C64000FDFEB0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEF4E68115E5C64000FDFEB0 = {
+			isa = PBXGroup;
+			children = (
+				FEF4E6A715E5C89700FDFEB0 /* iPhone */,
+				FEF4E68F15E5C64000FDFEB0 /* Frameworks */,
+				FEF4E68D15E5C64000FDFEB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEF4E68D15E5C64000FDFEB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4E68C15E5C64000FDFEB0 /* Taste of Peru.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF4E68F15E5C64000FDFEB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4E69015E5C64000FDFEB0 /* UIKit.framework */,
+				FEF4E69215E5C64000FDFEB0 /* Foundation.framework */,
+				FEF4E69415E5C64000FDFEB0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEF4E6A715E5C89700FDFEB0 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4E6B315E5DFC100FDFEB0 /* Resources */,
+				FEF4E6B215E5DF7E00FDFEB0 /* Views */,
+				FEF4E6B115E5DF6400FDFEB0 /* View Controllers */,
+				FEF4E6B415E5DFD600FDFEB0 /* Supporting Files */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		FEF4E6B115E5DF6400FDFEB0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FEF4E6B215E5DF7E00FDFEB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEF4E6B315E5DFC100FDFEB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FEF4E6B415E5DFD600FDFEB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4E69F15E5C64000FDFEB0 /* TPAppDelegate.h */,
+				FEF4E6A015E5C64000FDFEB0 /* TPAppDelegate.m */,
+				FEF4E69E15E5C64000FDFEB0 /* Taste of Peru-Prefix.pch */,
+				FEF4E69815E5C64000FDFEB0 /* Taste of Peru-Info.plist */,
+				FEF4E69915E5C64000FDFEB0 /* InfoPlist.strings */,
+				FEF4E69C15E5C64000FDFEB0 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEF4E68B15E5C64000FDFEB0 /* Taste of Peru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF4E6A415E5C64000FDFEB0 /* Build configuration list for PBXNativeTarget "Taste of Peru" */;
+			buildPhases = (
+				FEF4E68815E5C64000FDFEB0 /* Sources */,
+				FEF4E68915E5C64000FDFEB0 /* Frameworks */,
+				FEF4E68A15E5C64000FDFEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Taste of Peru";
+			productName = "Taste of Peru";
+			productReference = FEF4E68C15E5C64000FDFEB0 /* Taste of Peru.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEF4E68315E5C64000FDFEB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TP;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Pietro Rea";
+			};
+			buildConfigurationList = FEF4E68615E5C64000FDFEB0 /* Build configuration list for PBXProject "Taste of Peru" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEF4E68115E5C64000FDFEB0;
+			productRefGroup = FEF4E68D15E5C64000FDFEB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEF4E68B15E5C64000FDFEB0 /* Taste of Peru */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEF4E68A15E5C64000FDFEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF4E69B15E5C64000FDFEB0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEF4E68815E5C64000FDFEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF4E69D15E5C64000FDFEB0 /* main.m in Sources */,
+				FEF4E6A115E5C64000FDFEB0 /* TPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEF4E69915E5C64000FDFEB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF4E69A15E5C64000FDFEB0 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = "/Users/pietrorea/Developer/Taste of Peru/src/iPhone/Supporting Files";
+			sourceTree = "<absolute>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEF4E6A215E5C64000FDFEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEF4E6A315E5C64000FDFEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEF4E6A515E5C64000FDFEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taste of Peru/Taste of Peru-Prefix.pch";
+				INFOPLIST_FILE = "Taste of Peru/Taste of Peru-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEF4E6A615E5C64000FDFEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taste of Peru/Taste of Peru-Prefix.pch";
+				INFOPLIST_FILE = "Taste of Peru/Taste of Peru-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEF4E68615E5C64000FDFEB0 /* Build configuration list for PBXProject "Taste of Peru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF4E6A215E5C64000FDFEB0 /* Debug */,
+				FEF4E6A315E5C64000FDFEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF4E6A415E5C64000FDFEB0 /* Build configuration list for PBXNativeTarget "Taste of Peru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF4E6A515E5C64000FDFEB0 /* Debug */,
+				FEF4E6A615E5C64000FDFEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEF4E68315E5C64000FDFEB0 /* Project object */;
+}
