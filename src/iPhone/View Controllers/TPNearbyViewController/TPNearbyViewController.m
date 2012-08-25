@@ -8,6 +8,8 @@
 
 #import "TPNearbyViewController.h"
 
+#define TAB_BAR_IMAGE_NAME @"74-location"
+
 @interface TPNearbyViewController ()
 
 @end
