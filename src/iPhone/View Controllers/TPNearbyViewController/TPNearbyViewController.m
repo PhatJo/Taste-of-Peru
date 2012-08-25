@@ -7,20 +7,23 @@
 //
 
 #import "TPNearbyViewController.h"
-
-#define TAB_BAR_IMAGE_NAME @"74-location"
+#import <MapKit/MapKit.h>
 
 @interface TPNearbyViewController ()
 
+@property (strong, nonatomic) MKMapView* mapView;
 @property (strong, nonatomic) UITableView* tableView;
-//@property (strong, nonatomic)
 
+@property (strong, nonatomic) IBOutlet UIView *centerView;
+@property (strong, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @end
 
 @implementation TPNearbyViewController
 @synthesize segmentedControl;
+@synthesize centerView = _centerView;
+@synthesize navigationBar = _navigationBar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,11 +38,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //Load map as initial view
+    self.mapView = [[MKMapView alloc] initWithFrame:self.centerView.frame];
+    [self.view addSubview:self.mapView];
 }
 
 - (void)viewDidUnload
 {
     [self setSegmentedControl:nil];
+    [self setNavigationBar:nil];
+    [self setCenterView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
