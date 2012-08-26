@@ -1,6 +1,9 @@
 *~
 .DS_Store
 
+#Taste of Peru
+TPSettings.m
+
 # Xcode
 *.pbxuser
 *.mode1v3
