@@ -28,6 +28,7 @@
 		FEBBB8F715E91EB8005F1155 /* 20-gear-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8F515E91EB8005F1155 /* 20-gear-2.png */; };
 		FEBBB8F815E91EB8005F1155 /* 20-gear-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBBB8F615E91EB8005F1155 /* 20-gear-2@2x.png */; };
 		FEBBB8FB15E93D2D005F1155 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBBB8FA15E93D2D005F1155 /* MapKit.framework */; };
+		FEBBB8FD15E9C7AB005F1155 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBBB8FC15E9C7AB005F1155 /* CoreLocation.framework */; };
 		FEF4E69115E5C64000FDFEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69015E5C64000FDFEB0 /* UIKit.framework */; };
 		FEF4E69315E5C64000FDFEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69215E5C64000FDFEB0 /* Foundation.framework */; };
 		FEF4E69515E5C64000FDFEB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4E69415E5C64000FDFEB0 /* CoreGraphics.framework */; };
@@ -64,6 +65,7 @@
 		FEBBB8F515E91EB8005F1155 /* 20-gear-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "20-gear-2.png"; path = "../20-gear-2.png"; sourceTree = "<group>"; };
 		FEBBB8F615E91EB8005F1155 /* 20-gear-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "20-gear-2@2x.png"; path = "../20-gear-2@2x.png"; sourceTree = "<group>"; };
 		FEBBB8FA15E93D2D005F1155 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FEBBB8FC15E9C7AB005F1155 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FEF4E68C15E5C64000FDFEB0 /* Taste of Peru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste of Peru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF4E69015E5C64000FDFEB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEF4E69215E5C64000FDFEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBBB8FD15E9C7AB005F1155 /* CoreLocation.framework in Frameworks */,
 				FEBBB8FB15E93D2D005F1155 /* MapKit.framework in Frameworks */,
 				FEF4E69115E5C64000FDFEB0 /* UIKit.framework in Frameworks */,
 				FEF4E69315E5C64000FDFEB0 /* Foundation.framework in Frameworks */,
@@ -186,6 +189,7 @@
 		FEF4E68F15E5C64000FDFEB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FEBBB8FC15E9C7AB005F1155 /* CoreLocation.framework */,
 				FEBBB8FA15E93D2D005F1155 /* MapKit.framework */,
 				FEF4E69015E5C64000FDFEB0 /* UIKit.framework */,
 				FEF4E69215E5C64000FDFEB0 /* Foundation.framework */,
