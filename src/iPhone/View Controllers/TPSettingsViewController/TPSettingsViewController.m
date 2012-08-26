@@ -8,6 +8,8 @@
 
 #import "TPSettingsViewController.h"
 
+//Note: Add version 1.0 at the bottom
+
 @interface TPSettingsViewController ()
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

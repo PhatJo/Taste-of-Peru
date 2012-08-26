@@ -43,6 +43,9 @@
     // Do any additional setup after loading the view from its nib.
     
     self.mapView = [[MKMapView alloc] initWithFrame:self.centerView.frame];
+    self.mapView.showsUserLocation = YES;
+    
+    
     self.tableView = [[UITableView alloc] initWithFrame:self.centerView.frame];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
