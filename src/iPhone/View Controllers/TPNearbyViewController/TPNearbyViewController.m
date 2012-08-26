@@ -9,8 +9,9 @@
 #import "TPNearbyViewController.h"
 #import <MapKit/MapKit.h>
 
-#define LIST_VIEW_INDEX 0
-#define MAP_VIEW_INDEX 1
+#define MAP_VIEW_INDEX 0
+#define LIST_VIEW_INDEX 1
+#define METERS_PER_MILE 1609.34
 
 @interface TPNearbyViewController ()
 
@@ -44,7 +45,7 @@
     
     self.mapView = [[MKMapView alloc] initWithFrame:self.centerView.frame];
     self.mapView.showsUserLocation = YES;
-    
+    self.mapView.delegate = self;
     
     self.tableView = [[UITableView alloc] initWithFrame:self.centerView.frame];
     self.tableView.delegate = self;
@@ -71,9 +72,9 @@
 - (IBAction)segmentedControlTapped:(id)sender {
     
     if (self.segmentedControl.selectedSegmentIndex == LIST_VIEW_INDEX)
-        [self presentMapView];
-    else
         [self presentTableView];
+    else
+        [self presentMapView];
 }
 
 #pragma mark - UITableViewDataSource methods
@@ -99,8 +100,16 @@
 #pragma mark - UITableViewDelegate methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
     
+    
+}
+
+#pragma mark - MKMapKitDelegate methods
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
+    MKCoordinateRegion coordinateRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 20 * METERS_PER_MILE, 20 * METERS_PER_MILE);
+    [self.mapView setRegion:coordinateRegion animated:YES];
 }
 
 #pragma mark - Miscellaneous methods

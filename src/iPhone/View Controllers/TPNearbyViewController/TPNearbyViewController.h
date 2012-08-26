@@ -7,7 +7,8 @@
 //
 
 #import "TPBaseViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface TPNearbyViewController : TPBaseViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TPNearbyViewController : TPBaseViewController <UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate>
 
 @end
