@@ -1,0 +1,29 @@
+//
+//  TPRestaurant.h
+//  Taste of Peru
+//
+//  Created by Pietro Rea on 8/27/12.
+//  Copyright (c) 2012 Pietro Rea. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface TPRestaurant : NSObject
+
+@property (strong, nonatomic) NSString* ID;
+@property (strong, nonatomic) NSString* name;
+
+@property (strong, nonatomic) NSString* phone;
+@property (strong, nonatomic) NSString* address;
+@property (strong, nonatomic) NSString* crossStreet;
+@property (strong, nonatomic) NSString* postalCode;
+@property (strong, nonatomic) NSString* city;
+@property (strong, nonatomic) NSString* state;
+@property (strong, nonatomic) NSString* country;
+
+@property (strong, nonatomic) NSNumber* latitude;
+@property (strong, nonatomic) NSNumber* longitude;
+@property (strong, nonatomic) NSNumber* distance;
+
+
+@end

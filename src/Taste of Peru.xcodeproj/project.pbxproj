@@ -48,6 +48,7 @@
 		FEF4E69B15E5C64000FDFEB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEF4E69915E5C64000FDFEB0 /* InfoPlist.strings */; };
 		FEF4E69D15E5C64000FDFEB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF4E69C15E5C64000FDFEB0 /* main.m */; };
 		FEF4E6A115E5C64000FDFEB0 /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF4E6A015E5C64000FDFEB0 /* TPAppDelegate.m */; };
+		FEFD50CC15EB30FB00BAB3A6 /* TPRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFD50CB15EB30FB00BAB3A6 /* TPRestaurant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,8 @@
 		FEF4E69E15E5C64000FDFEB0 /* Taste of Peru-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taste of Peru-Prefix.pch"; sourceTree = "<group>"; };
 		FEF4E69F15E5C64000FDFEB0 /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
 		FEF4E6A015E5C64000FDFEB0 /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
+		FEFD50CA15EB30FB00BAB3A6 /* TPRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRestaurant.h; sourceTree = "<group>"; };
+		FEFD50CB15EB30FB00BAB3A6 /* TPRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRestaurant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +290,7 @@
 				FEF4E6A715E5C89700FDFEB0 /* iPhone */,
 				FEBBB91015EAC51D005F1155 /* Web Services */,
 				FEF4E68F15E5C64000FDFEB0 /* Frameworks */,
+				FEFD50C715EB30AF00BAB3A6 /* Entities */,
 				FEBBB90A15EAABDA005F1155 /* Utilities */,
 				FEF4E68D15E5C64000FDFEB0 /* Products */,
 			);
@@ -363,6 +367,23 @@
 				FEF4E69C15E5C64000FDFEB0 /* main.m */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEFD50C715EB30AF00BAB3A6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD50C915EB30D200BAB3A6 /* TPRestaurant */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FEFD50C915EB30D200BAB3A6 /* TPRestaurant */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD50CA15EB30FB00BAB3A6 /* TPRestaurant.h */,
+				FEFD50CB15EB30FB00BAB3A6 /* TPRestaurant.m */,
+			);
+			path = TPRestaurant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +484,7 @@
 				FEBBB93615EAE23E005F1155 /* AFURLConnectionOperation.m in Sources */,
 				FEBBB93715EAE23E005F1155 /* AFXMLRequestOperation.m in Sources */,
 				FEBBB93815EAE23E005F1155 /* UIImageView+AFNetworking.m in Sources */,
+				FEFD50CC15EB30FB00BAB3A6 /* TPRestaurant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
