@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString* clientID;
 @property (strong, nonatomic) NSString* clientSecret;
+@property (strong, nonatomic) NSString* categoryID; //For Peruvian restaurants
 
 + (id)settings;
 

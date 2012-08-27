@@ -20,11 +20,9 @@
 
 - (void)performOperation {
     
-    NSString* clientID = [[TPSettings settings] clientID];
-    NSString* clientSecret = [[TPSettings settings] clientSecret];
     NSString* baseString = @"https://api.foursquare.com/v2/venues/search?";
     
-    NSString* urlString = [baseString stringByAppendingFormat:@"ll=%f,%f&client_id=%@&client_secret=%@&categoryId=%@", [self.longitude doubleValue], [self.latitude doubleValue], clientID, clientSecret, self.categoryID];
+    NSString* urlString = [baseString stringByAppendingFormat:@"ll=%f,%f&client_id=%@&client_secret=%@&categoryId=%@", [self.longitude doubleValue], [self.latitude doubleValue], self.clientID, self.clientSecret, self.categoryID];
       
     __weak TPGetRestaurantListWebOperation* webOperation = self;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];

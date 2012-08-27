@@ -6,8 +6,10 @@
 //  Copyright (c) 2012 Pietro Rea. All rights reserved.
 //
 
-#import "TPNearbyViewController.h"
 #import <MapKit/MapKit.h>
+#import "TPGetRestaurantListWebOperation.h"
+#import "TPNearbyViewController.h"
+#import "TPSettings.h"
 
 #define MAP_VIEW_INDEX 0
 #define LIST_VIEW_INDEX 1
@@ -21,6 +23,8 @@
 @property (strong, nonatomic) IBOutlet UIView *centerView;
 @property (strong, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+
+@property (strong, nonatomic) TPGetRestaurantListWebOperation *getRestaurantListWebOperation;
 
 - (IBAction)segmentedControlTapped:(id)sender;
 
@@ -110,6 +114,8 @@
     
     MKCoordinateRegion coordinateRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 20 * METERS_PER_MILE, 20 * METERS_PER_MILE);
     [self.mapView setRegion:coordinateRegion animated:YES];
+    
+    [self performGetRestaurantListWebOperation:userLocation.location.coordinate];
 }
 
 #pragma mark - Miscellaneous methods
@@ -125,6 +131,30 @@
     
     [self.mapView  removeFromSuperview];
     [self.view addSubview:self.tableView];
+    
+}
+
+#pragma mark - Miscellaneous
+
+- (void)performGetRestaurantListWebOperation:(CLLocationCoordinate2D)coordinates {
+    
+    self.getRestaurantListWebOperation = [[TPGetRestaurantListWebOperation alloc] init];
+    self.getRestaurantListWebOperation.latitude = [NSNumber numberWithDouble:(double)coordinates.latitude];
+    self.getRestaurantListWebOperation.longitude = [NSNumber numberWithDouble:(double)coordinates.longitude];
+    self.getRestaurantListWebOperation.clientID = [[TPSettings settings] clientID];
+    self.getRestaurantListWebOperation.clientSecret = [[TPSettings settings] clientSecret];
+    self.getRestaurantListWebOperation.categoryID = [[TPSettings settings] categoryID];
+    
+    __weak TPNearbyViewController* viewController;
+    [self.getRestaurantListWebOperation setSuccessBlock:^(id result) {
+        [viewController handleRestaurantListResponse];
+    }];
+    
+    [self.getRestaurantListWebOperation startAsynchronous];
+    
+}
+
+- (void)handleRestaurantListResponse {
     
 }
 
