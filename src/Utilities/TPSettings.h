@@ -10,7 +10,7 @@
 
 @interface TPSettings : NSObject
 
-@property (strong, nonatomic) NSString* cliendID;
+@property (strong, nonatomic) NSString* clientID;
 @property (strong, nonatomic) NSString* clientSecret;
 
 + (id)settings;
