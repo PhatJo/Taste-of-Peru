@@ -8,8 +8,10 @@
 
 #import <MapKit/MapKit.h>
 #import "TPGetRestaurantListWebOperation.h"
+#import "TPGetRestaurantListResult.h"
 #import "TPNearbyViewController.h"
 #import "TPSettings.h"
+#import "TPRestaurant.h"
 
 #define MAP_VIEW_INDEX 0
 #define LIST_VIEW_INDEX 1
@@ -145,7 +147,7 @@
     self.getRestaurantListWebOperation.clientSecret = [[TPSettings settings] clientSecret];
     self.getRestaurantListWebOperation.categoryID = [[TPSettings settings] categoryID];
     
-    __weak TPNearbyViewController* viewController;
+    __weak TPNearbyViewController* viewController = self;
     [self.getRestaurantListWebOperation setSuccessBlock:^(id result) {
         [viewController handleRestaurantListResponse];
     }];
@@ -154,6 +156,13 @@
 }
 
 - (void)handleRestaurantListResponse {
+    
+    TPGetRestaurantListResult* result = (TPGetRestaurantListResult*) self.getRestaurantListWebOperation.result;
+    NSMutableArray* array = result.restaurantArray;
+    
+    for (TPRestaurant* restaurant in array) {
+        debugLog(@"Restaurant name is %@", restaurant.name);
+    }
     
 }
 

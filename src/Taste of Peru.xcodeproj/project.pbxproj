@@ -49,6 +49,7 @@
 		FEF4E69D15E5C64000FDFEB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF4E69C15E5C64000FDFEB0 /* main.m */; };
 		FEF4E6A115E5C64000FDFEB0 /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF4E6A015E5C64000FDFEB0 /* TPAppDelegate.m */; };
 		FEFD50CC15EB30FB00BAB3A6 /* TPRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFD50CB15EB30FB00BAB3A6 /* TPRestaurant.m */; };
+		FEFD50D415ED944D00BAB3A6 /* TPGetRestaurantListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFD50D315ED944D00BAB3A6 /* TPGetRestaurantListResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,8 @@
 		FEF4E6A015E5C64000FDFEB0 /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
 		FEFD50CA15EB30FB00BAB3A6 /* TPRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRestaurant.h; sourceTree = "<group>"; };
 		FEFD50CB15EB30FB00BAB3A6 /* TPRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRestaurant.m; sourceTree = "<group>"; };
+		FEFD50D215ED944D00BAB3A6 /* TPGetRestaurantListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPGetRestaurantListResult.h; sourceTree = "<group>"; };
+		FEFD50D315ED944D00BAB3A6 /* TPGetRestaurantListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPGetRestaurantListResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFD50C915EB30D200BAB3A6 /* TPRestaurant */,
+				FEFD50D115ED942100BAB3A6 /* TPGetRestaurantListResult */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -384,6 +388,15 @@
 				FEFD50CB15EB30FB00BAB3A6 /* TPRestaurant.m */,
 			);
 			path = TPRestaurant;
+			sourceTree = "<group>";
+		};
+		FEFD50D115ED942100BAB3A6 /* TPGetRestaurantListResult */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD50D215ED944D00BAB3A6 /* TPGetRestaurantListResult.h */,
+				FEFD50D315ED944D00BAB3A6 /* TPGetRestaurantListResult.m */,
+			);
+			path = TPGetRestaurantListResult;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +498,7 @@
 				FEBBB93715EAE23E005F1155 /* AFXMLRequestOperation.m in Sources */,
 				FEBBB93815EAE23E005F1155 /* UIImageView+AFNetworking.m in Sources */,
 				FEFD50CC15EB30FB00BAB3A6 /* TPRestaurant.m in Sources */,
+				FEFD50D415ED944D00BAB3A6 /* TPGetRestaurantListResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
