@@ -151,7 +151,6 @@
     }];
     
     [self.getRestaurantListWebOperation startAsynchronous];
-    
 }
 
 - (void)handleRestaurantListResponse {

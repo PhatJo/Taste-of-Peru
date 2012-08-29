@@ -20,9 +20,12 @@
 
 - (void)performOperation {
     
-    NSString* baseString = @"https://api.foursquare.com/v2/venues/search?";
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyyMMdd";
+    NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];
     
-    NSString* urlString = [baseString stringByAppendingFormat:@"ll=%f,%f&client_id=%@&client_secret=%@&categoryId=%@", [self.longitude doubleValue], [self.latitude doubleValue], self.clientID, self.clientSecret, self.categoryID];
+    NSString* baseString = @"https://api.foursquare.com/v2/venues/search?";
+    NSString* urlString = [baseString stringByAppendingFormat:@"ll=%f,%f&client_id=%@&client_secret=%@&categoryId=%@&v=%@", [self.latitude doubleValue], [self.longitude doubleValue], self.clientID, self.clientSecret, self.categoryID, dateString];
       
     __weak TPGetRestaurantListWebOperation* webOperation = self;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
