@@ -67,6 +67,7 @@
     result.restaurantArray = [[NSMutableArray alloc] init];
     
     for (NSDictionary* restaurantDictionary in venuesArray) {
+        
         TPRestaurant* restaurant = [[TPRestaurant alloc] init];
         restaurant.name = [[restaurantDictionary objectForKey:RESTAURANT_NAME] valueOrNil];
         restaurant.ID = [[restaurantDictionary objectForKey:RESTAURANT_ID] valueOrNil];
@@ -85,7 +86,11 @@
         restaurant.state = [[locationDictionary objectForKey:RESTAURANT_STATE] valueOrNil];
         restaurant.country = [[locationDictionary objectForKey:RESTAURANT_COUNTRY] valueOrNil];
         
-        [result.restaurantArray addObject:restaurant];
+        //Only include restaurants that have at least a street address
+        
+        if (restaurant.address) {
+            [result.restaurantArray addObject:restaurant];
+        }
     }
     
     self.result = result;
