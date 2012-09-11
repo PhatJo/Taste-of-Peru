@@ -25,7 +25,7 @@
 #define RESTAURANT_LATITUDE @"lat"
 #define RESTAURANT_LONGITUDE @"lng"
 #define RESTAURANT_DISTANCE @"distance"
-#define RESTAURANT_POSTAL_CODE @"postal"
+#define RESTAURANT_POSTAL_CODE @"postalCode"
 #define RESTAURANT_CITY @"city"
 #define RESTAURANT_STATE @"state"
 #define RESTAURANT_COUNTRY @"country"
@@ -80,6 +80,7 @@
         restaurant.longitude = [[locationDictionary objectForKey:RESTAURANT_LONGITUDE] valueOrNil];
         restaurant.latitude = [[locationDictionary objectForKey:RESTAURANT_LATITUDE] valueOrNil];
         restaurant.distance = [[locationDictionary objectForKey:RESTAURANT_DISTANCE] valueOrNil];
+        restaurant.city = [[locationDictionary objectForKey:RESTAURANT_CITY] valueOrNil];
         restaurant.postalCode = [[locationDictionary objectForKey:RESTAURANT_POSTAL_CODE] valueOrNil];
         restaurant.state = [[locationDictionary objectForKey:RESTAURANT_STATE] valueOrNil];
         restaurant.country = [[locationDictionary objectForKey:RESTAURANT_COUNTRY] valueOrNil];

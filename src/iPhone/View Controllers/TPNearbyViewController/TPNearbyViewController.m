@@ -86,19 +86,27 @@
 #pragma mark - UITableViewDataSource methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 1;
+    TPGetRestaurantListResult* result = self.getRestaurantListWebOperation.result;
+    return result.restaurantArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"TPSettingsCell"];
-    if (!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"TPSettingsCell"];
+    UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"TPRestaurantCell"];
+    if (!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"TPRestaurantCell"];
+    
+    TPGetRestaurantListResult* result = self.getRestaurantListWebOperation.result;
+    TPRestaurant* restaurant = [result.restaurantArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = restaurant.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@, %@ %@", restaurant.address, restaurant.city, restaurant.state, restaurant.postalCode];
+    
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     
     return cell;
 }
@@ -114,7 +122,7 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
     
-    MKCoordinateRegion coordinateRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 20 * METERS_PER_MILE, 20 * METERS_PER_MILE);
+    MKCoordinateRegion coordinateRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 10 * METERS_PER_MILE, 10 * METERS_PER_MILE);
     [self.mapView setRegion:coordinateRegion animated:YES];
     
     [self performGetRestaurantListWebOperation:userLocation.location.coordinate];
@@ -140,14 +148,16 @@
 
 - (void)presentMapView {
     
-    [self.tableView  removeFromSuperview];
+    [self.tableView removeFromSuperview];
     [self.view addSubview:self.mapView];
     
 }
 
 - (void)presentTableView {
     
-    [self.mapView  removeFromSuperview];
+    [self.mapView removeFromSuperview];
+    
+    
     [self.view addSubview:self.tableView];
     
 }
