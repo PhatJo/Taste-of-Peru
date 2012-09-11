@@ -10,6 +10,7 @@
 #import "TPGetRestaurantListResult.h"
 #import "AFNetworking.h"
 #import "TPSettings.h"
+#import "NSObject+Extensions.h"
 
 #define RESPONSE_DICTIONARY @"response"
 #define VENUES_ARRAY @"venues"
@@ -59,29 +60,29 @@
 
 - (void)parseJson:(NSDictionary*)jsonDict {
     
-    NSDictionary* responseDictionary = [jsonDict objectForKey:RESPONSE_DICTIONARY];
-    NSArray* venuesArray = [responseDictionary objectForKey:VENUES_ARRAY];
+    NSDictionary* responseDictionary = [[jsonDict objectForKey:RESPONSE_DICTIONARY] valueOrNil];
+    NSArray* venuesArray = [[responseDictionary objectForKey:VENUES_ARRAY] valueOrNil];
     
     TPGetRestaurantListResult* result = [[TPGetRestaurantListResult alloc] init];
     result.restaurantArray = [[NSMutableArray alloc] init];
     
     for (NSDictionary* restaurantDictionary in venuesArray) {
         TPRestaurant* restaurant = [[TPRestaurant alloc] init];
-        restaurant.name = [restaurantDictionary objectForKey:RESTAURANT_NAME];
-        restaurant.ID = [restaurantDictionary objectForKey:RESTAURANT_ID];
+        restaurant.name = [[restaurantDictionary objectForKey:RESTAURANT_NAME] valueOrNil];
+        restaurant.ID = [[restaurantDictionary objectForKey:RESTAURANT_ID] valueOrNil];
         
-        NSDictionary* contactDictionary = [restaurantDictionary objectForKey:RESTAURANT_CONTACT_DICTIONARY];
-        restaurant.phone = [contactDictionary objectForKey:RESTAURANT_PHONE];
+        NSDictionary* contactDictionary = [[restaurantDictionary objectForKey:RESTAURANT_CONTACT_DICTIONARY] valueOrNil];
+        restaurant.phone = [[contactDictionary objectForKey:RESTAURANT_PHONE] valueOrNil];
         
-        NSDictionary* locationDictionary = [restaurantDictionary objectForKey:RESTAURANT_LOCATION_DICTIONARY];
-        restaurant.address = [locationDictionary objectForKey:RESTAURANT_ADDRESS];
-        restaurant.crossStreet = [locationDictionary objectForKey:RESTAURANT_CROSS_STREET];
-        restaurant.longitude = [locationDictionary objectForKey:RESTAURANT_LONGITUDE];
-        restaurant.latitude = [locationDictionary objectForKey:RESTAURANT_LATITUDE];
-        restaurant.distance = [locationDictionary objectForKey:RESTAURANT_DISTANCE];
-        restaurant.postalCode = [locationDictionary objectForKey:RESTAURANT_POSTAL_CODE];
-        restaurant.state = [locationDictionary objectForKey:RESTAURANT_STATE];
-        restaurant.country = [locationDictionary objectForKey:RESTAURANT_COUNTRY];
+        NSDictionary* locationDictionary = [[restaurantDictionary objectForKey:RESTAURANT_LOCATION_DICTIONARY] valueOrNil];
+        restaurant.address = [[locationDictionary objectForKey:RESTAURANT_ADDRESS] valueOrNil];
+        restaurant.crossStreet = [[locationDictionary objectForKey:RESTAURANT_CROSS_STREET] valueOrNil];
+        restaurant.longitude = [[locationDictionary objectForKey:RESTAURANT_LONGITUDE] valueOrNil];
+        restaurant.latitude = [[locationDictionary objectForKey:RESTAURANT_LATITUDE] valueOrNil];
+        restaurant.distance = [[locationDictionary objectForKey:RESTAURANT_DISTANCE] valueOrNil];
+        restaurant.postalCode = [[locationDictionary objectForKey:RESTAURANT_POSTAL_CODE] valueOrNil];
+        restaurant.state = [[locationDictionary objectForKey:RESTAURANT_STATE] valueOrNil];
+        restaurant.country = [[locationDictionary objectForKey:RESTAURANT_COUNTRY] valueOrNil];
         
         [result.restaurantArray addObject:restaurant];
     }

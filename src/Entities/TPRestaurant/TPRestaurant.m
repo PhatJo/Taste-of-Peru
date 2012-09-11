@@ -10,5 +10,8 @@
 
 @implementation TPRestaurant
 
+#pragma mark - MKAnnotation protocol methods
+
+
 
 @end

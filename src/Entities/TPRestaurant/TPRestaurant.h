@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface TPRestaurant : NSObject
+@interface TPRestaurant : NSObject <MKAnnotation>
 
 @property (strong, nonatomic) NSString* ID;
 @property (strong, nonatomic) NSString* name;
@@ -25,5 +27,10 @@
 @property (strong, nonatomic) NSNumber* longitude;
 @property (strong, nonatomic) NSNumber* distance;
 
+#pragma mark - MKAnnotation protocol
+
+@property (nonatomic, readonly, copy) NSString* subtitle;
+@property (nonatomic, readonly, copy) NSString* title;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 
 @end
