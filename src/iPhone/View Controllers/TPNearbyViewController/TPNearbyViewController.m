@@ -120,6 +120,22 @@
     [self performGetRestaurantListWebOperation:userLocation.location.coordinate];
 }
 
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id < MKAnnotation >)annotation {
+    
+    NSString* identifier = @"Restaurant";
+    MKPinAnnotationView* annotationView = (MKPinAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    if (!annotationView) {
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+    }
+    else {
+        annotationView.annotation = annotation;
+    }
+    
+    annotationView.enabled = YES;
+    annotationView.canShowCallout = YES;
+    return annotationView;
+}
+
 #pragma mark - Miscellaneous methods
 
 - (void)presentMapView {
@@ -161,7 +177,7 @@
     NSMutableArray* array = result.restaurantArray;
     
     for (TPRestaurant* restaurant in array) {
-        debugLog(@"Restaurant name is %@", restaurant.name);
+        [self.mapView addAnnotation:restaurant];
     }
     
 }
